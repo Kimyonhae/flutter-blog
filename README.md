@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+공부한걸 적어보자는 마음으로 만든 blog입니다.
+
+server는 nodejs로 만들었습니다. client는 flutter 입니다.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
