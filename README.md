@@ -8,7 +8,9 @@ server는 nodejs로 만들었습니다. client는 flutter 입니다.
 
 ## notion / git link
 
--[notion-link](https://www.notion.so/Flutter-junior-developer-04425fe90e77434e9d863a638298dc52) -[githubs-link](https://github.com/Kimyonhae/flutter-blog.git)
+- [notion-link](https://www.notion.so/Flutter-junior-developer-04425fe90e77434e9d863a638298dc52)
+
+- [githubs-link](https://github.com/Kimyonhae/flutter-blog.git)
 
 git :
 
