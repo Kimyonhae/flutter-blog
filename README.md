@@ -12,8 +12,6 @@ server는 nodejs로 만들었습니다. client는 flutter 입니다.
 
 - [githubs-link](https://github.com/Kimyonhae/flutter-blog.git)
 
-git :
-
 ### Getting Started
 
 This project is a starting point for a Flutter application.
