@@ -119,40 +119,46 @@ class _IntroducePart extends StatelessWidget {
           const SizedBox(height: 50.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Container(
-                width: 60,
-                height: 60,
-                padding: const EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  border: Border.all(width: 2, color: bgColor),
-                  borderRadius: BorderRadius.circular(8),
-                  image: const DecorationImage(
-                    image: AssetImage(
-                      "assets/image/githubs.png",
-                    ),
-                    fit: BoxFit.fill,
-                  ),
-                ),
+            children: const [
+              _CustomIconcontainer(
+                imgpath: "assets/image/githubs.png",
               ),
-              Container(
-                width: 60,
-                height: 60,
-                padding: const EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  border: Border.all(width: 2, color: bgColor),
-                  borderRadius: BorderRadius.circular(8),
-                  image: const DecorationImage(
-                    image: AssetImage(
-                      "assets/image/notion.png",
-                    ),
-                    fit: BoxFit.fill,
-                  ),
-                ),
+              _CustomIconcontainer(
+                imgpath: "assets/image/notion.png",
               ),
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _CustomIconcontainer extends StatelessWidget {
+  final String imgpath;
+  const _CustomIconcontainer({
+    Key? key,
+    required this.imgpath,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+        width: 60,
+        height: 60,
+        padding: const EdgeInsets.all(5),
+        decoration: BoxDecoration(
+          border: Border.all(width: 2, color: bgColor),
+          borderRadius: BorderRadius.circular(8),
+          image: DecorationImage(
+            image: AssetImage(
+              imgpath,
+            ),
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
     );
   }

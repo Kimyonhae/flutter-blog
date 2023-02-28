@@ -5,9 +5,9 @@ import 'package:http/http.dart' as http;
 
 class ApiController {
   static Future<List<Post>> apiToJson(String path) async {
-    var url = Uri.parse("http://172.30.1.7:3000/$path");
+    var url = Uri.parse(
+        "https://port-0-flutter-blog-node-3kzv72nlenrmg2p.sel3.cloudtype.app/$path");
     var response = await http.get(url);
-    print(response.body);
     if (response.statusCode == 200) {
       List<dynamic> decodeResponse = jsonDecode(response.body);
       var result =
